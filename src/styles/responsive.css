@@ -1,0 +1,80 @@
+/* TABLET */
+@media screen and (min-width: 600px) {
+    .header .hamburger-menu {
+        display: none;
+    }
+
+    .header .navbar {
+        display: inline-block;
+    }
+
+    .header .navbar ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .content-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .hero-text {
+        font-size: 1.75rem;
+    }
+
+    .resto-pict {
+        width: auto;
+      }
+}
+
+
+/* LAPTOP */
+@media screen and (min-width: 900px) {
+    .header {
+        padding: 1rem 3rem;
+    }
+
+    .header .web-name {
+        font-size: 2.25rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1.25rem;
+    }
+
+    .hero-text {
+        font-size: 2.25rem;
+    }
+
+    .content-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1600px) {
+    .header {
+        padding: 1.5rem 5rem;
+    }
+
+    .header .web-name {
+        font-size: 3rem;
+    }
+
+    .navbar ul li a {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    .content-container{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+}
