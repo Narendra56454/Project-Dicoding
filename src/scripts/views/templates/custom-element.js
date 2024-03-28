@@ -15,7 +15,7 @@ class RestaurantCard extends HTMLElement {
     this.innerHTML = `
       <div>
         <p class="restaurant-location">${city}</p>
-        <img class="restaurant-img" src="${CONFIG.BASE_IMAGE_URL + pictureId}" alt="${name}">
+        <img class="restaurant-img lazyload" src="${CONFIG.BASE_IMAGE_URL + pictureId}" alt="${name}">
         <div class="content-detail-wrapper">
           <p class="restaurant-rating">⭐️${rating}</p>
           <h3 class="restaurant-name"><a href="/#/detail/${id}">${name}</a></h3>
