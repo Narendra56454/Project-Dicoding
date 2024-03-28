@@ -1,17 +1,24 @@
 {
   "name": "restaurant-apps",
   "version": "1.0.0",
-  "description": "",
+  "description": "Final Project for Dicoding",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narendra56454/Project-Dicoding.git"
+  },
+  "homepage": "http://Narendra56454.github.io/Project-Dicoding",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && node sharp.js",
     "serve": "http-server dist",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "lint": "eslint ./src",
     "e2e": "codeceptjs run --steps",
-    "build-image": "node sharp.js"
+    "build-image": "node sharp.js",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
@@ -31,6 +38,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "fake-indexeddb": "^4.0.2",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.5.3",
     "http-server": "^14.1.1",
     "imagemin-mozjpeg": "^9.0.0",
